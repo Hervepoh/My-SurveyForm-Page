@@ -15,16 +15,19 @@
         <p id="description">Please submit the survey</p>
         <form action="" method="get" id="survey-form">
             <div class="field">
-                <label for="name">name</label><input type="text" name="name" id="name">
+                <label for="name" id="name-label">* name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
             </div>
             <div class="field">
-                <label for="email">amail</label><input type="email" name="email" id="email">
+                <label for="email" id="email-label">* email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your enmail " required>
             </div>
             <div class="field">
-                <label for="age">age</label><input type="number" name="age" id="age">
+                <label for="age" id="number-label">* age</label>
+                <input type="number" name="age" id="age" min="0" max="200" placeholder="Enter your age" required>
             </div>
             <div class="field">
-                <label for="name">name</label><input type="text" name="name" id="name">
+                <label for="name">name</label><select name="name" id="name"></select>
             </div>
         </form>
     </div>
