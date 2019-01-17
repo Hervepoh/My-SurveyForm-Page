@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --bghead-color:#2B78E4;
+    --bgbody-color:#EEE;
+    --bg-color:#FFF;
+    --viol-color:#6C63FF;
+    --gray-color:#F4F4F4;
+    --other-color:#F55F44;
+}
