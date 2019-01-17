@@ -11,41 +11,46 @@
 
 <body>
     <div class="container">
-        <h1 id="title"></h1>
-        <p id="description">Please submit the survey</p>
-        <form action="" method="get" id="survey-form">
-            <div class="field">
-                <label for="name" id="name-label">* name</label>
-                <input type="text" name="name" id="name" placeholder="Enter your name" required>
-            </div>
-            <div class="field">
-                <label for="email" id="email-label">* email</label>
-                <input type="email" name="email" id="email" placeholder="Enter your enmail " required>
-            </div>
-            <div class="field">
-                <label for="age" id="number-label">* age</label>
-                <input type="number" name="age" id="age" min="0" max="200" placeholder="Enter your age" required>
-            </div>
-            <div class="field">
-                <label for="dropdown">name</label>
-                <select name="dropdown" id="dropdown">
-                    <option value=""> </option>
-                </select>
-            </div>
-            <div class="field">
-                <label for="" id="number-label">* age</label>
-                <input type="radio" name="radio" id="age">
-            </div>
-            <div class="field">
-                <label for="age" id="number-label">* age</label>
-                <input type="checkbox" name="age" id="age" value="">
-            </div>
-            <div class="field">
-                    <label for="age" id="number-label">* age</label>
-                    <textarea cols="" rows="" id="" placeholder=""></textarea>
-                </div>
-                <button type="submit" id="submit" class="btn"></button>
-        </form>
+        <div class="survey-head">
+            <h1 id="title"></h1>
+        </div>
+        <div class="survey-body">
+                <p id="description">Please submit the survey</p>
+                <form action="" method="get" id="survey-form">
+                    <div class="field">
+                        <label for="name" id="name-label">* name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email" id="email-label">* email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your enmail " required>
+                    </div>
+                    <div class="field">
+                        <label for="age" id="number-label">* age</label>
+                        <input type="number" name="age" id="age" min="0" max="200" placeholder="Enter your age" required>
+                    </div>
+                    <div class="field">
+                        <label for="dropdown">name</label>
+                        <select name="dropdown" id="dropdown">
+                            <option value=""> </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="" id="number-label">* age</label>
+                        <input type="radio" name="radio" id="age">
+                    </div>
+                    <div class="field">
+                        <label for="age" id="number-label">* age</label>
+                        <input type="checkbox" name="age" id="age" value="">
+                    </div>
+                    <div class="field">
+                            <label for="age" id="number-label">* age</label>
+                            <textarea cols="" rows="" id="" placeholder=""></textarea>
+                        </div>
+                        <button type="submit" id="submit" class="btn"></button>
+                </form>
+        </div>
+     
     </div>
 </body>
 
