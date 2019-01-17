@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Lobster');
 *{
     box-sizing: border-box;
 }
@@ -8,4 +9,87 @@
     --viol-color:#6C63FF;
     --gray-color:#F4F4F4;
     --other-color:#F55F44;
+    --w4:20px;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Abel', sans-serif;
+    font-style: normal;
+    font-size: 1.3rem;
+    color: #000,
+}
+.container{
+    background-color: var(--bgbody-color);
+}
+.survey-head{
+    background-color: var(--bghead-color);
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    padding: 40px;
+    height: 60vh;
+    width: 100%;
+}
+.survey-logo{
+    
+    height: auto;
+    max-width: 200px;
+    display: block;
+    margin: auto;
+}
+#title{
+    position: relative;
+    top: -35px;
+    color: var(--bg-color);
+    text-shadow: 0px 0px 15px black;
+}
+.survey-body{
+    height: auto;
+    width: 80vw;
+    border: 1px solid transparent;
+    margin: -55px auto 0px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--bg-color);
+}
+.heart{
+    background: red;
+    display: inline-block;
+    position: relative;
+    height: var(--w4);
+    width: var(--w4);
+    margin: calc(var(--w4)/6);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.heart::before,.heart::after{
+    content: '';
+    background: red;
+    display: block;
+    position: absolute;
+    height: var(--w4);
+    width:  var(--w4);
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+}
+.heart::before{
+    right: calc(var(--w4)/2) ;
+}
+.heart::after{
+    bottom: calc(var(--w4)/2) ;
+
+}
+.footer{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    padding: 50px;
+    color: var(--bghead-color);
+    text-shadow: 0px 0px 30px black;
 }
