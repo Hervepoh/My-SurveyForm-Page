@@ -18,7 +18,8 @@ body{
     font-family: 'Abel', sans-serif;
     font-style: normal;
     font-size: 1.3rem;
-    color: #000,
+    color: #000;
+    
 }
 .container{
     background-color: var(--bgbody-color);
@@ -28,13 +29,23 @@ body{
     font-family: 'Lobster', cursive;
     text-align: center;
     padding: 40px;
-    height: 60vh;
+    min-height: 40vh;
     width: 100%;
+    position: relative;
 }
-.survey-logo{
-    
+.secret-logo{
     height: auto;
+    width: 20vw ;
+    position: absolute;
+    top: -10vw;
+    left: -8vw;
+}
+    
+
+.survey-logo{
+
     max-width: 200px;
+    width: auto;
     display: block;
     margin: auto;
 }
@@ -45,6 +56,8 @@ body{
     text-shadow: 0px 0px 15px black;
 }
 .survey-body{
+    position: relative;
+    z-index: 100;
     height: auto;
     width: 80vw;
     border: 1px solid transparent;
@@ -52,6 +65,35 @@ body{
     padding: 10px;
     text-align: center;
     background-color: var(--bg-color);
+}
+input[type="text"],input[type="email"],input[type="number"],select{
+    height: 25px;
+    width: 100%;
+}
+input[type="radio"]:checked,.checktext:hover{
+   background: var(--bghead-color);
+   color: var(--bg-color)
+}
+input[type="text"]:focus,input[type="email"]:focus,input[number]:focus{
+    background: var(--bghead-color);
+    opacity: .9;
+    color: var(--bg-color);
+    height: 25.5px;
+}
+.recommend-status{
+    text-align: left;
+}
+.check-status{
+    display: block;
+    float: left;
+    width: 270px;
+    text-align: left;
+}
+.clear{
+    clear: both;
+}
+.check-status label{
+    display: block;
 }
 .heart{
     background: red;
@@ -92,4 +134,46 @@ body{
     padding: 50px;
     color: var(--bghead-color);
     text-shadow: 0px 0px 30px black;
+}
+
+@media (max-width:514px){
+    .survey-head{      
+        padding: 5vh;
+        height: 50vh;
+        width: 100%;
+
+    }
+    .field{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 10px;
+    }
+#title{
+        font-size: 1.2em;
+    }
+    .survey-body{
+        width: 90vw;
+    }
+}
+
+@media (min-width:714px){
+    .field{
+        margin: 40px 0px;
+    }
+    .label{
+        display: block;
+        float: left;
+       width:48%;
+       line-height: 25px;
+       text-align: right;
+       margin-right: 30px;
+    }
+    
+    input[type="text"],input[type="email"],input[type="number"],select{
+        max-width: 250px;
+        display: block;
+       
+    }
+    
 }

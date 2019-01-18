@@ -20,23 +20,26 @@
             </h1>
         </div>
         <div class="survey-body">
+            <img src="/img/User-secret-01.svg" alt="" class="secret-logo">
             <p id="description">Let us know how we can improve freecodecamp</p>
-            
+
             <form action="#" method="POST" id="survey-form">
                 <div class="field">
-                    <label for="name" id="name-label">* name</label>
+                    <label for="name" id="name-label" class="label">name</label>
                     <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+
                 </div>
                 <div class="field">
-                    <label for="email" id="email-label">* email</label>
+                    <label for="email" id="email-label" class="label">email</label>
                     <input type="email" name="email" id="email" placeholder="Enter your enmail" required>
                 </div>
                 <div class="field">
-                    <label for="number" id="number-label">* age</label>
+                    <label for="number" id="number-label" class="label">age</label>
                     <input type="number" name="age" id="number" min="0" max="200" placeholder="Enter your age" required>
                 </div>
                 <div class="field">
-                    <label for="dropdown">Which option best describes your current role ? </label>
+                    <label for="dropdown" class="label">Which option best describes your current role ? </label>
                     <select name="dropdown" id="dropdown">
                         <option value=""> Student </option>
                         <option value=""> Full time Job </option>
@@ -46,13 +49,19 @@
                     </select>
                 </div>
                 <div class="field">
-                    <label id="recommend">How likely is that you would recommnded freecodecamp to a friend ?</label>
-                    <label for="definitely"> <input type="radio" name="recommend" id="definitely" value="definitely"> definitely</label>
-                    <label for="maybe"><input type="radio" name="recommend" id="maybe" value="maybe"> maybe</label>
-                    <label for="notsure"> <input type="radio" name="recommend" id="notsure" value="notsure"> not sure</label>
+                    <label id="recommend" class="label">How likely is that you would recommnded freecodecamp to a
+                        friend ?</label>
+                    <div class="recommend-status">
+                        <label for="definitely"> <input type="radio" name="recommend" id="definitely" value="definitely">
+                            definitely</label>
+                        <label for="maybe"><input type="radio" name="recommend" id="maybe" value="maybe"> maybe</label>
+                        <label for="notsure"> <input type="radio" name="recommend" id="notsure" value="notsure"> not
+                            sure</label>
+
+                    </div>
                 </div>
                 <div class="field">
-                    <label for="likeFCC">What do you like most in FCC</label>
+                    <label for="likeFCC" class="label">What do you like most in FCC</label>
                     <select name="likeFCC" id="likeFCC">
                         <option value="challenges"> Challenges </option>
                         <option value="projects"> Projects </option>
@@ -61,31 +70,44 @@
                     </select>
                 </div>
                 <div class="field">
-                    <label>Things that should be improved in the future <span>(Check all that
+                    <label class="label">Things that should be improved in the future <span>(Check all that
                             apply):</span> </label>
-                    <label for="front"> <input type="checkbox" name="improve" id="front" value="front"> front-end Projets</label>
-                    <label for="back"><input type="checkbox" name="improve" id="back" value="back"> back-end Projets</label>
-                    <label for="data"> <input type="checkbox" name="improve" id="data" value="data"> Data visualisation</label>
-                    <label for="cha"> <input type="checkbox" name="improve" id="cha" value="cha"> challanges</label>
-                    <label for="open"> <input type="checkbox" name="improve" id="open" value="open"> Open source commnunity</label>
-                    <label for="git"> <input type="checkbox" name="improve" id="git" value="git"> Gitter help rooms</label>
-                    <label for="video"> <input type="checkbox" name="improve" id="video" value="video"> Video</label>
-                    <label for="city"> <input type="checkbox" name="improve" id="city" value="city"> city meetups</label>
-                    <label for="wiki"> <input type="checkbox" name="improve" id="wiki" value="wiki"> wiki</label>
-                    <label for="forum"> <input type="checkbox" name="improve" id="forum" value="forum"> forum</label>
+                    <div class="check-status">
+                        <label for="front" class="checktext"> <input type="checkbox" name="improve" id="front" value="front">
+                            front-end Projets</label>
+                        <label for="back" class="checktext"><input type="checkbox" name="improve" id="back" value="back">
+                            back-end Projets</label>
+                        <label for="data" class="checktext"> <input type="checkbox" name="improve" id="data" value="data">
+                            Data visualisation</label>
+                        <label for="cha" class="checktext"> <input type="checkbox" name="improve" id="cha" value="cha">
+                            challanges</label>
+                        <label for="open" class="checktext"> <input type="checkbox" name="improve" id="open" value="open">
+                            Open source commnunity</label>
+                        <label for="git" class="checktext"> <input type="checkbox" name="improve" id="git" value="git">
+                            Gitter help rooms</label>
+                        <label for="video" class="checktext"> <input type="checkbox" name="improve" id="video" value="video">
+                            Video</label>
+                        <label for="city" class="checktext"> <input type="checkbox" name="improve" id="city" value="city">
+                            city meetups</label>
+                        <label for="wiki" class="checktext"> <input type="checkbox" name="improve" id="wiki" value="wiki">
+                            wiki</label>
+                        <label for="forum" class="checktext"> <input type="checkbox" name="improve" id="forum" value="forum">
+                            forum</label>
+                    </div>
                 </div>
+                <div class="clear"></div>
                 <div class="field">
-                    <label for="comment">Any comments or suggestions ?</label>
-                    <textarea cols="20" rows="20" id="comment" placeholder="Enter your comment here"></textarea>
+                    <label for="comment" class="label">Any comments or suggestions ?</label>
+                    <textarea cols="20" rows="5" id="comment" placeholder="Enter your comment here"></textarea>
                 </div>
                 <button type="submit" id="submit" class="btn">submit</button>
             </form>
         </div>
         <div class="footer">
-                Designer with <span class="heart"></span> by Herve Epoh 
+            Designer with <span class="heart"></span> by Herve Epoh
         </div>
     </div>
-   
+
 </body>
 
 </html>
