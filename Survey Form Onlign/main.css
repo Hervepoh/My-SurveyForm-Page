@@ -17,8 +17,7 @@ body{
     font-family: 'Abel', sans-serif;
     font-style: normal;
     font-size: 1.3rem;
-    color: #000;
-    
+    color: #000 
 }
 .container{
     background-color: var(--bgbody-color);
@@ -38,20 +37,20 @@ body{
     position: absolute;
     top: -10vw;
     left: -8vw;
-}
-    
-
+}    
 .survey-logo{
-
     max-width: 200px;
     width: auto;
     display: block;
     margin: auto;
 }
+.check-status{
+    position: relative;
+}
 .illustration{
     position: absolute;
-    bottom: 60vh;
-    right: 0;
+    bottom: 0;
+    right: -17vw;
     width: 25vw;
     min-width: 140px;
 }
@@ -177,7 +176,7 @@ input[type="text"]:focus,input[type="email"]:focus,input[number]:focus{
     }
 }
 
-@media (min-width:714px){
+@media (min-width:900px){
     .field{
         margin: 40px 0px;
     }
@@ -191,7 +190,7 @@ input[type="text"]:focus,input[type="email"]:focus,input[number]:focus{
     }
     .label1{
         display: inline-block;
-        width:400px;;
+        width:400px;
     }
     
     input[type="text"],input[type="email"],input[type="number"],select,textarea{

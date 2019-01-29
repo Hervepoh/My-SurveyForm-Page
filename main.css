@@ -200,5 +200,63 @@ input[type="text"]:focus,input[type="email"]:focus,input[number]:focus{
        
     }
   
+     
+}
+
+
+/* personnalyse my box */
+.switch{
+    display: inline-block;
+    width: 60px;
+    vertical-align: middle;
+    color: white;
+    font-size: 15px;
+    height: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.switch-container{
+    display: inline-block;
+    height: 20px;;
+    width: 120px;
+}
+.switch .on{
+    display: inline-block;
+    float: left;
+
+    border-top-left-radius:15px;
+    border-bottom-left-radius: 15px;
+    width: 50%;
+    background-color: green;
+    padding: 4px 0;
     
+}
+.switch .off{
+    display: inline-block;
+    width: 50%;
+    background-color: red;;
+    border-top-right-radius:15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+    padding: 4px 0;
+}
+.switch .mid{
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 50px;
+
+    z-index: 100;
+    float: left;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid black;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
